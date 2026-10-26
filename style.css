@@ -1,0 +1,394 @@
+=/* Ora's Bakery - Part 2 External Stylesheet */
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #fffaf2;
+    color: #333333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #7b2d8b;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #e08a00;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #7b2d8b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* MAIN WEBSITE HEADING */
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.2rem;
+    color: white;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    background-color: #9b4caf;
+    padding: 10px 16px;
+    margin: 4px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #e08a00;
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    background-color: #e08a00;
+    color: white;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+
+/* HEADINGS */
+
+h1,
+h2,
+h3 {
+    color: #7b2d8b;
+}
+
+h2 {
+    border-bottom: 3px solid #e08a00;
+    padding-bottom: 6px;
+}
+
+h3 {
+    color: #9b4caf;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background-color: #f3d9f7;
+    padding: 35px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    color: #7b2d8b;
+    border: none;
+    margin-top: 0;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button,
+button {
+    display: inline-block;
+    background-color: #e08a00;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+    background-color: #7b2d8b;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #e5b8ed;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #7b2d8b;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #e08a00;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #d6a7df;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #7b2d8b;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #faf0fc;
+}
+
+tr:hover {
+    background-color: #f5dfb8;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid #d6a7df;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #7b2d8b;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b77ac2;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #e08a00;
+    border-color: #7b2d8b;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #7b2d8b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: #ffd98a;
+}
+
+footer a:hover,
+footer a:focus {
+    color: white;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    main {
+        width: 94%;
+    }
+
+    .card-container,
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .hero {
+        padding: 25px 15px;
+    }
+
+    .card-container,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery img,
+    .card img {
+        height: auto;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    form {
+        padding: 18px;
+    }
+}
